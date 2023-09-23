@@ -51,3 +51,7 @@ table {
 }
 
 /*---CSS reset complete---*/
+
+h1 {
+	font-size: 45px;
+}
