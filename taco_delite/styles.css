@@ -1,0 +1,882 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*---CSS reset complete---*/
+
+
+/*---CSS testing area - delete once complete---*/
+img{
+	max-width: 200px; 
+}
+
+h1, h2, h3, h4 {  
+  font-weight: 900;
+  color: #000000;
+  margin: 0.5em;
+}
+
+/*
+h1 {font-size: 2em;}
+h2 {font-size: 1.8em;}
+h3 {font-size: 1.5em;}
+h4 {font-size: 1.3em;}
+*/
+
+/*---end of CSS testing area - delete once complete---*/
+
+
+body {
+	font-family: fenwick, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+	color: inherit;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    width: 1280px;
+	margin: auto;
+	background-color: #A0A0A0;/*delete this line later*/
+}
+
+header {
+	position: relative;
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	text-transform: uppercase;
+}
+
+.oval {
+	margin: 15px;
+	height: 170px;
+    width: 300px;
+    background-color: #FFFFB7;
+    border-radius: 50%;
+	border: #95291C 2px solid;
+}
+
+header .logo {
+	top: 35px;
+	position: absolute;
+	max-width: 210px;
+}
+
+header ul {
+    flex: 2;
+    display: flex;
+/*    justify-content: space-evenly;*/
+}
+
+nav a {
+	text-decoration: none;
+	color: inherit;
+	font-size: 18px;
+    display: inline;
+    padding: 15px 10px;
+	font-weight: 600;
+}
+
+/*END of NAV*/
+
+/*HOME AREA*/
+
+#home {
+	display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+	margin-top: 10px;
+	background-color: #FFFFB7;
+	height: 640px;
+	font-size: 18px;
+}
+
+#home h3 {
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+#home a{
+	position: relative;
+	text-decoration: none;
+	color: inherit;
+	border: 1px solid #000000;
+	top: 25px;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+#home img {
+	max-width: 640px;
+}
+
+.main {
+	padding: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+/*END of HOME AREA*/
+
+/*SOCIAL MEDIA START*/
+
+#social_media {
+	text-transform: uppercase;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.sm_posts{
+	display: flex;
+	height: auto;
+}
+
+.fb-post {
+	margin: 10px;
+}
+/*SOCIAL MEDIA END*/
+
+
+/*FOOTER START*/
+
+
+footer {
+	background-color: #FFFFB7;
+
+}
+
+#footer {
+/*	position: relative;*/
+	display: grid;
+	    grid-template-columns: 32% 22% 12% 34%;
+		text-transform: uppercase;
+	font-size: 18px;
+
+
+/*
+	justify-content: center;
+	justify-items: center;
+*/
+}
+
+footer .logo {
+/*	top: 35px;*/
+/*	position: absolute;*/
+	max-width: 300px;
+	margin: 15px 15px 15px  75px;
+}
+
+.info_main{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100px;
+}
+
+.info_head{
+	transform: rotate(-90deg);
+
+}
+
+.info_list a{
+	text-decoration: none;
+	color: inherit;
+
+}
+
+.info_list {
+	margin-left: -15px;
+}
+
+.links{
+	display: flex;
+/*	align-items: center;*/
+	flex-direction: row;
+	margin: auto;
+/*	position: absolute;*/
+/*  top: 50%;*/
+/*  transform: translate(0, -50%);*/
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+.links a{
+	padding:10px;
+}
+
+.address_main{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100px;
+}
+
+.address_head{
+	transform: rotate(-90deg);
+
+}
+
+.address_list a{
+	text-decoration: none;
+	color: inherit;
+
+}
+
+.address_list {
+	margin-left: -15px;
+}
+
+footer span {
+	width: 1280px;
+	background: #FFFFB7;
+	position: absolute;
+	padding: 10px 0px;
+	display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*FOOTER END*/
+
+
+
+/*---grid design area---*/
+
+.wrapper{
+  max-width: 1200px;
+  margin: auto;
+  }
+
+/*Basic Grid Styles*/
+.Grid {
+  display: flex;
+  flex-flow: row; 
+  flex-wrap: wrap;
+}
+.u-textCenter {
+ text-align: center;
+}
+.Grid-cell {
+  flex: 1;
+}
+.Grid-cell img {
+	object-fit: cover;
+	width: 100%;
+}
+
+.Demo {
+  padding: .8em 1em 0;
+  margin-bottom: 1em;
+  background: rgba(51, 153, 204,.2);
+  transition: background-color 0.3s ease;
+  border: 1px solid #33cccc;;
+  border-radius: 3px;
+}
+/*
+.Demo:after {
+	content: "";
+    display: block;
+    margin-top: .8em;
+    height: 1px;
+}
+*/
+
+.Demo:hover {
+	background: rgba(51, 153, 204,.6);
+}
+
+
+/* With gutters*/
+/*$gutter: 1em;*/
+.Grid--gutters {
+  margin-left: -1em;
+}
+  
+.Grid-cell {
+    padding-left: 1em;
+  }
+
+.Grid--nested .Grid-cell:first-of-type .Demo {
+	margin-right: 1em;
+}
+   
+
+
+
+
+
+
+/*
+ Large screens 
+@media (min-width: 48em) {
+  .Grid--cols-2 > .Grid-cell,
+  .Grid--cols-3 > .Grid-cell,
+  .Grid--cols-4 > .Grid-cell,
+  .Grid--cols-6 > .Grid-cell,
+  .Grid--cols-12 > .Grid-cell{
+	  flex: 1; 
+	}
+	.Grid--1of4 > .Grid-cell:first-of-type {
+		flex: 0 0 25%;
+	}
+	.Grid--1of3 > .Grid-cell:first-of-type {
+		flex: 0 0 30%;
+	}
+	.Grid--gutters.Grid--nested .Grid-cell:first-of-type .Demo {
+		margin-right: 0;
+	}
+}
+*/
+ 
+
+/*---end of grid design area---*/
+
+
+/*CONTACT*/
+
+/*
+#contact{
+	border-bottom: 1px solid #000;
+}
+*/
+
+form{
+	border: 1px solid #000000;
+	margin-bottom: 25px;
+}
+form, textarea{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+form, textarea {
+	font: 14px Arial;
+    padding: 10px;
+    width: 400px;
+}
+input[type=text], input[type=email], input[type=number], input[type=comments], textarea {
+    width: 400px;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea{
+	background-color: #FFFFFF;
+}
+
+input[type=radio] {
+	accent-color: #34495E;
+}
+input[type=submit] {
+	width: 100%;
+    color: white;
+    background-color: #34495E;
+    padding: 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #07d;
+}
+input.error  {
+    border: 2px solid red;
+}
+button {
+	border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    text-shadow: 1px 1px 0px #000000;
+	text-decoration: none;
+    color: #FFFFFF;
+}
+
+#contactMethod {
+	border: 2px solid #aaa;
+	margin: 0px 0 0 0;
+	padding: 0px 250px 15px 2px;
+}
+.required{
+	color: red;
+}
+
+
+
+/*ORDER AREA START*/
+.master {
+  width: 600px;
+}
+		/* Styling for the collapsible bar */
+		.collapsible {
+		  background-color: #008CBA;
+		  color: white;
+		  cursor: pointer;
+		  padding: 18px;
+		  width: 100%;
+		  border: none;
+		  text-align: left;
+		  outline: none;
+		  font-size: 15px;
+		}
+		.collapsible:hover {
+		  background-color: #0077ab;
+		}
+		.active, .collapsible:hover {
+		  background-color: #005c7a;
+		}
+		.content {
+		  padding: 18px 18px;
+		  display: none;
+		  overflow: hidden;
+		  background-color: #f1f1f1;
+		}
+		/* Styling for the menu */
+		.menu {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+		}
+		.item {
+			background-color: #ddd;
+			padding: 60px;
+			border: 1px solid #999;
+			text-align: center;
+			font-size: 20px;
+		}
+
+/*ORDER AREA END*/
+
+
+/*POPup START*/
+/*Scroll Design*/
+::-webkit-scrollbar {
+	z-index: 100;
+      width: 5px;
+} /* this targets the default scrollbar (compulsory) */
+::-webkit-scrollbar-track {
+      background-color: #452732 ;
+} /* the new scrollbar will have a flat appearance with the set background color */
+ 
+::-webkit-scrollbar-thumb {
+      background-color: rgba(0, 0, 0, 0.2); 
+} /* this will style the thumb, ignoring the track */
+ 
+::-webkit-scrollbar-button {
+      background-color: #000;
+} /* optionally, you can style the top and the bottom buttons (left and right for horizontal bars) */
+ 
+::-webkit-scrollbar-corner {
+      background-color: #000;
+} /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+
+/* Style CSS */
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+input{
+  outline-color: #C98474;
+}
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #A7D2CB;
+    border-radius: 0px;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.btnStyle{
+	background-color: #C98474;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 18px;
+	color: #fff;
+	padding: 7px 10px;
+	letter-spacing: .1em;
+	border-radius: 3px;
+	z-index: 1;
+	cursor: pointer;
+	transition: all .2s ease-in-out;
+}
+
+.btnStyle:hover{
+	background-color: #874C62;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, .16), 0px 6px 10px rgba(0, 0, 0, .23);
+	transform: scale(1.05, 1.05);
+}
+
+.btnStyle2{
+	background-color: #874C62;
+}
+
+.btnStyle2:hover{
+	background-color: #C98474;
+}
+
+.btnStyle3{
+	background-color: #A7D2CB;
+}
+
+.btnStyle3:hover{
+	background-color: #F2D388;
+}
+
+.toggleCart{
+	position: relative;
+}
+
+.fa-circle {
+    font-size: 21px !important;
+    color: #C98474 ;
+}
+
+.num {
+    font-size: 12px;
+    padding: 3px 6px;
+    color: #fff;
+}
+
+.num, .fa-circle {
+    position: absolute;
+    right: -9px;
+    top: -9px;
+}
+
+.cart{
+	width: 200px;
+	position: fixed;
+	top: 60px;
+	bottom: 0px;
+	right: -300px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+
+	z-index: 1;
+	background-color: #874C62;
+	padding: 30px;
+	box-shadow: 2px 0 20px 5px rgba(0, 0, 0, 0.24);
+
+	transition: all 0.25s ease-in-out;
+}
+
+.cart h2{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+#cartToggle{ 
+	display: none;
+}
+
+/*where the magic happens*/
+#cartToggle:checked ~ div.body-content > .cart{
+	right: 0px;
+}
+
+#cartToggle:checked ~ div.body-content{
+	right: 100px;
+}
+
+#cartToggle:checked ~ div.body-content > .cart > a.finishOrder{
+	right: 5px;
+}
+
+.body-content{
+	position: relative;
+	right: 0px;
+	width: 80%;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-around;
+
+	transition: all .2s ease-in-out;
+}
+
+/* orders */
+
+.recipe-menu{
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.recipe{
+	background-image: url('http://mariecatribs.com/assets/styles/images/drawn-frame-big.png');
+	background-size: 100% 100%;
+	padding: 10px;
+  margin-bottom: 40px;
+	width: 300px;
+	position: relative;
+}
+
+.recipe img{
+	width: 100%;
+	height: 80%;
+}
+
+.name{
+    font-size: 23px;
+    text-align: center;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 22px;
+    padding: 0px 15px;
+}
+
+.recipe:hover > .addToCart{
+	opacity: 1;
+}
+
+.addToCart {
+	opacity: 0;
+    position: absolute;
+    top: 70%;
+    left: 28%;
+    transition: all .2s ease-in-out;
+}
+
+.checkOrder{
+	padding: 50px;
+}
+
+.checkOrder {
+    padding: 29px 50px !important;
+}
+
+.listHeading {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.listOfIngredients{
+	list-style: none;
+	margin-bottom: 15px;
+}
+
+.listOfIngredients input{
+	margin: 0px 5px;
+}
+
+.addIngredientWrap{
+	display: flex;
+	margin: 5px 0;
+}
+
+.addIngredientWrap input{
+	width: 60%;
+}
+
+.addIngredientWrap a{
+	padding: 2px 6px;
+	margin: 0 5px;
+	font-size: 15px;
+}
+
+.cancelInput{
+	background-color: #B33232;
+}
+
+.orderName {
+    padding: 13px 0px 8px 0px;
+}
+
+.orderPrice{
+	float: right;
+}
+
+hr {
+    margin: 25px 0 5px 0;
+}
+
+.delBtn {
+    float: right;
+    color: #F2D388;
+    cursor: pointer;
+}
+
+.totalDialog{
+	display: inline-block;
+	float: right;
+}
+
+.cart > h2 > span{
+	margin-left: 15px
+}
+
+.finishOrder {
+    width: 200px;
+    position: fixed;
+    bottom: 0;
+    right: -265px;
+    z-index: 2;
+    padding: 6px 28px;
+    border-radius: 0;
+    text-align: center;
+}
+
+#finishOrderDialog{
+	padding: 30px;
+	display: flex;
+	justify-content: space-around;
+}
+
+#finalOrderList{
+	width: 40%;
+}
+
+#finalOrderList h3{
+	text-align: center;
+}
+
+#finalOrderList ol{
+	margin: 10px 15px;
+}
+
+#buyerInfo {
+    width: 60%;
+    margin: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#buyerInfo input {
+    margin: 5px 0;
+    padding: 3px;
+    width: 90%;
+}
+
+#buyerInfo .order{
+    display: block;
+    width: 50%;
+    margin-top: 10px;
+    text-align:center;
+}
+
+#buyerInfo input::-webkit-input-placeholder {
+   text-align: center;
+}
+
+#thanksMessage{
+	padding: 20px;
+}
+
+/* Dialog Style */
+.ui-dialog {
+    z-index: 2;
+  	box-shadow: 2px 0 20px 5px rgba(0, 0, 0, 0.24);
+  background-color: #fff;
+  padding: 30px;
+}
+
+.ui-draggable-handle {
+    position: absolute;
+    background-color: #A7D2CB;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 999;
+}
+
+.ui-button {
+    background-color: #874C62;
+    border: none;
+    border-radius: 3px;
+    padding: 3px 5px;
+    float: right;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.ui-button:hover{
+  background-color: #C98474;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, .16), 0px 6px 10px rgba(0, 0, 0, .23);
+	transform: scale(1.05, 1.05);
+}
+
+/*POPUP END*/
+
