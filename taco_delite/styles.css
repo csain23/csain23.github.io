@@ -55,7 +55,7 @@ table {
 
 /*---CSS testing area - delete once complete---*/
 img{
-	max-width: 200px; 
+/*	max-width: 200px; */
 }
 
 h1, h2, h3, h4 {  
@@ -162,11 +162,54 @@ nav a {
 	max-width: 640px;
 }
 
+#our_menu {
+	display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+	margin-top: 10px;
+	background-color: #FFFFB7;
+	height: 640px;
+	font-size: 18px;
+}
+
+#our_menu h3 {
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+#our_menu a{
+	position: relative;
+	text-decoration: none;
+	color: inherit;
+	border: 1px solid #000000;
+	top: 25px;
+	padding: 10px;
+	text-transform: uppercase;
+}
+
+#our_menu img {
+	max-width: 640px;
+}
+
 .main {
 	padding: 100px;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	
+	
+}
+
+#menu {
+	text-transform: uppercase;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+#menu img{
+	border-radius: 30px;
 }
 
 /*END of HOME AREA*/
@@ -315,15 +358,115 @@ footer span {
 /*Basic Grid Styles*/
 .Grid {
   display: flex;
-  flex-flow: row; 
-  flex-wrap: wrap;
+/*  flex-flow: row; */
+/*  flex-wrap: wrap;*/
+	
+	 text-align: center;
+
+
+	
 }
+
 .u-textCenter {
  text-align: center;
 }
+
 .Grid-cell {
-  flex: 1;
+	flex: 2;
+	position: relative;
+	text-align: center;
+
 }
+
+.Grid-cell h3 {
+	    color: #ffffff;
+		text-shadow: 3px 3px 3px #A10000;
+
+}
+
+.taco{
+	position: absolute;
+	top: 18%;
+	left: 33%;
+
+}
+
+.burritos{
+	position: absolute;
+	top: 18%;
+	left: 27%;
+}
+
+.nachos{
+	position: absolute;
+	top: 18%;
+	left: 30%;
+}
+
+.chili{
+	position: absolute;
+	top: 18%;
+	left: 32%;
+}
+
+.salads{
+	position: absolute;
+	top: 18%;
+	left: 25%;
+}
+
+.sides{
+	position: absolute;
+	top: 18%;
+	left: 31%;
+}
+
+.breakfast{
+	position: absolute;
+	top: 18%;
+	left: 15%;
+}
+
+.order_1{
+	position: absolute;
+	top: 38%;
+	left: 33%;
+}
+
+.order_2{
+	position: absolute;
+	top: 42%;
+	left: 26%;
+}
+
+.order_1, .order_2 {
+	border-radius: 28px;
+	text-shadow: 1px 1px 3px #666666;
+    color: #ffffff;
+    background: #666666;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+} 
+
+.order_1:hover, .order_2:hover {
+    background: #3b3b3b;
+    text-decoration: none;
+}
+
+
+
+
+
+/*
+.burritos_order{
+	position: absolute;
+	top: 33%;
+	left: 37%;
+}
+*/
+
+
+
 .Grid-cell img {
 	object-fit: cover;
 	width: 100%;
@@ -358,7 +501,9 @@ footer span {
 }
   
 .Grid-cell {
-    padding-left: 1em;
+/*    padding-left: 1em;*/
+	    padding: 5px;
+
   }
 
 .Grid--nested .Grid-cell:first-of-type .Demo {
