@@ -123,7 +123,7 @@ header ul {
 nav a {
 	text-decoration: none;
 	color: inherit;
-	font-size: 18px;
+	font-size: 25px;
     display: inline;
     padding: 15px 10px;
 	font-weight: 600;
@@ -131,7 +131,8 @@ nav a {
 
 /*END of NAV*/
 
-/*HOME AREA*/
+/*MAIN*/
+/*home_page_start*/
 
 #home {
 	display: grid;
@@ -162,6 +163,95 @@ nav a {
 	max-width: 640px;
 }
 
+.main {
+	padding: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+/*SOCIAL MEDIA START*/
+
+#social_media {
+	text-transform: uppercase;
+	font-size: 30px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.sm_posts{
+	display: flex;
+	height: auto;
+}
+
+.fb-post {
+	margin: 10px;
+}
+/*SOCIAL MEDIA END*/
+
+/*About Start*/
+.about_top {
+	display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+	margin-top: 10px;
+	background-color: #FFFFB7;
+	height: 640px;
+	font-size: 18px;
+}
+
+.about_top h3 {
+	text-transform: uppercase;
+	font-size: 30px;
+}
+
+/*
+#home a{
+	position: relative;
+	text-decoration: none;
+	color: inherit;
+	border: 1px solid #000000;
+	top: 25px;
+	padding: 10px;
+	text-transform: uppercase;
+}
+*/
+
+.about_top .family {
+	max-width: 640px;
+}
+
+.about_top .front {
+	max-width: 500px;
+}
+
+.about_us{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	padding: 30px;
+}
+
+.about_us h3, .about_us img, .about_us p{
+	padding: 10px
+}
+
+
+/*
+.main {
+	padding: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+*/
+/*About End*/
+
+
+
+/*menu_page_start*/
 #our_menu {
 	display: grid;
     grid-template-columns: 50% 50%;
@@ -191,14 +281,6 @@ nav a {
 	max-width: 640px;
 }
 
-.main {
-	padding: 100px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	
-	
-}
 
 #menu {
 	text-transform: uppercase;
@@ -209,30 +291,164 @@ nav a {
 }
 
 #menu img{
+/*	border-radius: 30px;*/
+}
+
+
+.wrapper{
+  max-width: 1200px;
+  margin: auto;
+  }
+
+/*Basic Grid Styles*/
+.Grid {
+  display: flex;
+}
+
+.cell {
+	flex: 1;
+	position: relative;
+	text-align: center;
+	padding: 10px;
+
+}
+
+.cell h3 {
+/*	    color: #ffffff;*/
+		text-shadow: 3px 3px 3px #A10000;
+/*	position: absolute;*/
+/*		align-items: center;*/
+
+	 top: 15%;
+/*  left: 50%;*/
+/*  transform: translate(-50%, -50%);*/
+
+}
+
+
+.cell img {
+/*	object-fit: cover;*/
 	border-radius: 30px;
+	width: 100%;
 }
 
-/*END of HOME AREA*/
-
-/*SOCIAL MEDIA START*/
-
-#social_media {
-	text-transform: uppercase;
-	font-size: 30px;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
+/*
+.cell img:hover{
+	opacity: .5;
 }
 
-.sm_posts{
-	display: flex;
-	height: auto;
+.cell:hover {
+	background: #000000;
+	  transition: background-color 0.5s ease;
+  border: 1px solid #33cccc;
+	  border-radius: 30px;
+
+}
+*/
+
+
+.menu_item{
+/*
+	position: absolute;
+	display: block;
+	top: 18%;
+	left: 33%;
+*/
+	
+/*
+	margin: 0;
+	display: block;
+*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+/*	top: 0px;*/
+	margin: 0px;
+
 }
 
-.fb-post {
-	margin: 10px;
+h3.menu_item{
+	margin: 0px;
+	top: 50px;
 }
-/*SOCIAL MEDIA END*/
+
+.menu_item {
+/*
+		margin: 0;
+	display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+	border-radius: 30px;
+	text-shadow: 1px 1px 3px #666666;
+*/
+    color: #ffffff;
+/*    background: #666666;*/
+/*
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+*/
+} 
+
+
+
+.order {
+/*	position: absolute;*/
+/*	top: 50%;*/
+/*	left: 50%;*/
+/*	transform: translate(-50%, -50%);*/
+	
+/*		flex: 1;*/
+	position: relative;
+/*	text-align: center;*/
+	top: -50%;
+/*	left: 0;*/
+/*  right: 0;*/
+/*  bottom: 0;*/
+
+}
+
+.order {
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:1px solid #d02718;
+/*	display:inline-block;*/
+	cursor:pointer;
+	color:#ffffff;
+/*	font-family:Arial;*/
+/*	font-size:17px;*/
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.order:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+/*
+.order:active {
+	position:relative;
+	top:1px;
+}
+*/
+
+/*menu_page_end*/
+
+
+
+/*END of MAIN*/
+
+
+
+
+
+
 
 
 /*FOOTER START*/
@@ -350,165 +566,14 @@ footer span {
 
 /*---grid design area---*/
 
-.wrapper{
-  max-width: 1200px;
-  margin: auto;
-  }
-
-/*Basic Grid Styles*/
-.Grid {
-  display: flex;
-/*  flex-flow: row; */
-/*  flex-wrap: wrap;*/
-	
-	 text-align: center;
-
-
-	
-}
-
-.u-textCenter {
- text-align: center;
-}
-
-.Grid-cell {
-	flex: 2;
-	position: relative;
-	text-align: center;
-
-}
-
-.Grid-cell h3 {
-	    color: #ffffff;
-		text-shadow: 3px 3px 3px #A10000;
-
-}
-
-.taco{
-	position: absolute;
-	top: 18%;
-	left: 33%;
-
-}
-
-.burritos{
-	position: absolute;
-	top: 18%;
-	left: 27%;
-}
-
-.nachos{
-	position: absolute;
-	top: 18%;
-	left: 30%;
-}
-
-.chili{
-	position: absolute;
-	top: 18%;
-	left: 32%;
-}
-
-.salads{
-	position: absolute;
-	top: 18%;
-	left: 25%;
-}
-
-.sides{
-	position: absolute;
-	top: 18%;
-	left: 31%;
-}
-
-.breakfast{
-	position: absolute;
-	top: 18%;
-	left: 15%;
-}
-
-.order_1{
-	position: absolute;
-	top: 38%;
-	left: 33%;
-}
-
-.order_2{
-	position: absolute;
-	top: 42%;
-	left: 26%;
-}
-
-.order_1, .order_2 {
-	border-radius: 28px;
-	text-shadow: 1px 1px 3px #666666;
-    color: #ffffff;
-    background: #666666;
-    padding: 10px 20px 10px 20px;
-    text-decoration: none;
-} 
-
-.order_1:hover, .order_2:hover {
-    background: #3b3b3b;
-    text-decoration: none;
-}
 
 
 
 
 
-/*
-.burritos_order{
-	position: absolute;
-	top: 33%;
-	left: 37%;
-}
-*/
 
 
 
-.Grid-cell img {
-	object-fit: cover;
-	width: 100%;
-}
-
-.Demo {
-  padding: .8em 1em 0;
-  margin-bottom: 1em;
-  background: rgba(51, 153, 204,.2);
-  transition: background-color 0.3s ease;
-  border: 1px solid #33cccc;;
-  border-radius: 3px;
-}
-/*
-.Demo:after {
-	content: "";
-    display: block;
-    margin-top: .8em;
-    height: 1px;
-}
-*/
-
-.Demo:hover {
-	background: rgba(51, 153, 204,.6);
-}
-
-
-/* With gutters*/
-/*$gutter: 1em;*/
-.Grid--gutters {
-  margin-left: -1em;
-}
-  
-.Grid-cell {
-/*    padding-left: 1em;*/
-	    padding: 5px;
-
-  }
-
-.Grid--nested .Grid-cell:first-of-type .Demo {
-	margin-right: 1em;
-}
    
 
 
@@ -516,30 +581,7 @@ footer span {
 
 
 
-/*
- Large screens 
-@media (min-width: 48em) {
-  .Grid--cols-2 > .Grid-cell,
-  .Grid--cols-3 > .Grid-cell,
-  .Grid--cols-4 > .Grid-cell,
-  .Grid--cols-6 > .Grid-cell,
-  .Grid--cols-12 > .Grid-cell{
-	  flex: 1; 
-	}
-	.Grid--1of4 > .Grid-cell:first-of-type {
-		flex: 0 0 25%;
-	}
-	.Grid--1of3 > .Grid-cell:first-of-type {
-		flex: 0 0 30%;
-	}
-	.Grid--gutters.Grid--nested .Grid-cell:first-of-type .Demo {
-		margin-right: 0;
-	}
-}
-*/
- 
 
-/*---end of grid design area---*/
 
 
 /*CONTACT*/
