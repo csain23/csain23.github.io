@@ -624,10 +624,10 @@ footer span {
 }
 
 .content {
-    display: none;
-    overflow: hidden;
-	margin: 5;
-	background: white;
+	display: none;
+	overflow: hidden;
+	margin: 5px;
+	background: #FFFFFF;
 }
 
 .menu {
