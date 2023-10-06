@@ -4,7 +4,8 @@
     <head>
         <meta charset="utf-8">
         <title>TACO DELITE | ORDERS</title>
-		<meta name="description" content="ENTER DESCRIPTION">
+		<link rel="icon" type="image/x-icon" href="favicon-32x32.png"/>
+		<meta name="description" content="Taco Delite has been serving delicious Tacos, Supreme Salads, Taco Burgers, and Sweet Tea to the residents of Paris, TX for over 40 years.">
 		<meta name="author" content="David Sain">
         <link href="styles.css" rel="stylesheet">
 		<script async src="script.js"></script>
@@ -30,129 +31,341 @@
 			</header>
 			
 			<main>
-				<div>Left Menu Section</div>
+				<h3 class="order_menu">Menu</h3>
+				<div class="order_area">
 				
-				<div class="master">
-					<button class="collapsible">Tacos</button>
-                    <div class="content">
-                        <div class="menu">
-                            
-							<div class="item">
-								<div class="recipe">
-									<p class="name">Hamburger</p>
-									<img src="img/tacos.jpg">
-									<a class="btnStyle3 btnStyle addToCart" id="addToCartHamburger">Add to Cart</a>
-									<p class="price"><span>$2.41</span>$</p>
-									<p class="ingredients"><span>Made standard with meat, lettuce, chesse, and tomato</span>$</p>
-									<div id="checkOrderHamburger" title="Hamburger">
-										<h3 class="listHeading">List of Ingredients:</h3>
-										<ul class="listOfIngredients" id="recipe1">
-											<li><input type="checkbox" checked>Meat</li>
-                                            <li><input type="checkbox" checked>Lettuce</li>
-                                            <li><input type="checkbox" checked>Chesse</li>
-                                            <li><input type="checkbox" checked>Tomato</li>
-										</ul>
-										<a class="btnStyle3 btnStyle addIngredient">Add Ingredient</a>
-                                        <a class="btnStyle listOver">Done</a>
-                                        <h4 class="totalDialog" id="totalDialog1">Total: <span>15</span>$</h4>
-									</div>
-								</div>
-							</div>
-                            
-							
-							<div class="item">Soft Shell Taco</div>
-                            <div class="item">Double Decker Taco</div>
-                            <div class="item">Chichen Fajita</div>
-                            <div class="item">Tostado</div>
-                            <div class="item">Meaty Tostado</div>
-                        </div>
-					</div>
+                    <div class="left_nav">
+                        <ul class="topmenu">
+                            <li>Menu</li>
+                            <li><a href="#taco">Tacos</a></li>
+                            <li><a href="#burritos">Burritos</a></li>
+                            <li><a href="#nachos">Nachos</a></li>
+                            <li><a href="#chili">Chili</a></li>
+                            <li><a href="#salads">Salads</a></li>
+                            <li><a href="#sides">Sides</a></li>
+                            <li><a href="#breakfast">Breakfast</a></li>
+                        </ul>
+                    </div>
 					
-					<button class="collapsible">Burritos</button>
-                    <div class="content">
-                        <div class="menu">
-                            
-							
-							
-							
-							
-							
-							
-							<div class="item">Taco 1</div>
-							<div class="item">Taco 2</div>
-                            <div class="item">Taco 3</div>
-                            <div class="item">Taco 4</div>
-                            <div class="item">Taco 5</div>
-                            <div class="item">Taco 6</div>
-                        </div>
-					</div>
+					<div class="master">
+
+                      <div class="collapsible radius_1" id="tacos">Tacos</div>
+                      <div class="content">
+						  <div class="menu">
+							  
+							  <div class="recipe"> 
+								  <p class="name">Hard Shell Taco</p>
+								  <img src="img/taco/h_taco.jpg" alt="Hard Shell Taco">
+								  <p class="descrip">Made standard with meat, lettuce, cheese, and tomato</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>2.41</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Soft Shell Taco</p>
+								  <img src="img/taco/s_taco.jpg" alt="Soft Shell Taco">
+								  <p class="descrip">Made standard with meat, lettuce, cheese, and tomato</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>2.96</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Chicken Fajita Taco</p>
+								  <img src="img/taco/c_fajita.jpg" alt="Chicken Fajita Taco">
+								  <p class="descrip">Made standard with 3 hedium strips of chicken, lettuce, cheese, and tomato</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>4.17</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Double Decker Taco</p>
+								  <img src="img/taco/dd_taco.jpg" alt="Double Decker Taco">
+								  <p class="descrip">Made with standard hard shell taco wrapped with refried bean and flour tortilla</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>3.18</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Tostado</p>
+								  <img src="img/taco/tostado.jpg" alt="Tostado">
+								  <p class="descrip">Made standard with meat, lettuce, cheese, and tomato</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>2.74</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Meaty Tostado</p>
+								  <img src="img/taco/m_tostado.jpg" alt="Meaty Tostado">
+								  <p class="descrip">Made standard with beans, meat, sour cream, lettuce, cheese, and tomato</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>4.94</span></p>
+							  </div>
+							  
+						  </div>
+                      </div>
+
+                      <div class="collapsible" id="burritos">Burritos</div>
+                      <div class="content">
+						  <div class="menu">
+							  
+							  <div class="recipe"> 
+								  <p class="name">Bean Burrito</p>
+								  <img src="img/burritos/b_burrito.jpg" alt="Bean Burrito">
+								  <p class="descrip">Made standard with beans, red sauce, and cheese</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>2.85</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Meat Burrito</p>
+								  <img src="img/burritos/m_burrito.jpg" alt="Meat Burrito">
+								  <p class="descrip">Made Standard with 1 rounded scoop of meat, red sauce, and cheese</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>4.94</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Combo Burrito</p>
+								  <img src="img/burritos/c_burrito.jpg" alt="Combo Burrito">
+								  <p class="descrip">Made standard with beans, meat, red sauce, ande cheese</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>5.05</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Super Burrito</p>
+								  <img src="img/burritos/s_burrito.jpg" alt="Super Burrito">
+								  <p class="descrip">Made standard with beans, meat, red sause, sour cream, lettuce, cheese, and tomato</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>5.16</span></p>
+							  </div>
+							  
+						  </div>
+                      </div>
+
+                      <div class="collapsible" id="nachos">Nachos</div>
+                      <div class="content">
+						  <div class="menu">
+							  
+							  <div class="recipe"> 
+								  <p class="name">Cheese Nachos</p>
+								  <img src="img/nachos/c_nachos.jpg" alt="Cheese Nachos">
+								  <p class="descrip">Made standard with chips, peppers, and 2 scoops of cheese sauce</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>3.62</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Bean Nachos</p>
+								  <img src="img/nachos/b_nachos.jpg" alt="Bean Nachos">
+								  <p class="descrip">Made Standard with chips, peppers, 1 scoop of beans, and 2 scoops of cheese sauce</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>3.84</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Meat Nachos</p>
+								  <img src="img/nachos/m_nachos.jpg" alt="Meat Nachos">
+								  <p class="descrip">Made standard with chips, peppers, 1 scoop of beans, and 2 scoops of cheese sauce</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>5.27</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Combo Nachos</p>
+								  <img src="img/nachos/combo_nachos.jpg" alt="Combo Nachos">
+								  <p class="descrip">Made standard with chips, peppers, 1 scoop of bean, 1 scoop of meat, and 2 scoops of cheese</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>5.49</span></p>
+							  </div>
+							  
+						  </div>
+                      </div>
+
+                      <div class="collapsible" id="chili">Chili</div>
+                      <div class="content">
+						  <div class="menu">
+							  
+							  <div class="recipe"> 
+								  <p class="name">Chili with Cheese</p>
+								  <img src="img/chili/chili.jpg" alt="Chili with Cheese">
+								  <p class="descrip">2 scoops of chili with cheese, and onions</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>4.06</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Frito Pie</p>
+								  <img src="img/chili/frito_pie.jpg" alt="Frito Pie">
+								  <p class="descrip">Made standard with chili, Fritos, cheese, and onions</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>5.27</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Frito Burrito</p>
+								  <img src="img/chili/frito_b.jpg" alt="Frito Burrito">
+								  <p class="descrip">Made standard with chili, Fritos, cheese, and onions </p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>5.27</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Chili Burger</p>
+								  <img src="img/chili/chili_b.jpg" alt="Chili Burger">
+								  <p class="descrip">Made standard on a bun with red sauce, 1 scoop of chili on top and bottom bun, cheese, onions, and lettuce on the side</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>5.38</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Chili Burrito</p>
+								  <img src="img/chili/chili_burrito.jpg" alt="Chili Burrito">
+								  <p class="descrip">Made standard with 1 rounded scoop of meat, red sauce, cheese, 1 scoop of chilil, onions and lettuce on teh side</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>5.60</span></p>
+							  </div>
+							  
+						  </div>
+                      </div>
+
+                      <div class="collapsible" id="salads">Salads</div>
+                      <div class="content">
+						  <div class="menu">
+							  
+							  <div class="recipe"> 
+								  <p class="name">Small Salad</p>
+								  <img src="img/salads/s_salad.jpg" alt="Small Salad">
+								  <p class="descrip">Made Standard with lettuce and tomatoes</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>2.30</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Large Salad</p>
+								  <img src="img/salads/l_salad.jpg" alt="Large Salad">
+								  <p class="descrip">Made Standard with lettuce and tomatoes</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>2.96</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Super Salad</p>
+								  <img src="img/salads/super_salad.jpg" alt="Super Salad">
+								  <p class="descrip">Made Standard with chips, 1 scoop of beans, 1 scoop of meat, lettuce, sour cream, cheese, and tomato</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>6.59</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Salad Supreme</p>
+								  <img src="img/salads/salad_supreme.jpg" alt="Salad Supreme">
+								  <p class="descrip">Made Standard in a fried tortilla bowl with 1 scoop of bean, 1 scoop of meat, lettuce sour cream, cheese, tomato</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>7.69</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Chicken Fajita Salad</p>
+								  <img src="img/salads/fajita_salad.jpg" alt="Chicken Fajita Salad">
+								  <p class="descrip">Made Standard in a fried tortilla bowl with lettuce, sour cream, 6 medium strips of chicken, cheese, and tomato</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>8.24</span></p>
+							  </div>
+							  
+						  </div>
+                      </div>
+
+                      <div class="collapsible" id="sides">Sides</div>
+                      <div class="content">
+						  <div class="menu">
+							  
+							  <div class="recipe"> 
+								  <p class="name">Side of Red Sauce</p>
+								  <img src="img/sides/red_sauce.jpg" alt="Side of Red Sauce">
+								  <p class="descrip">4oz</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>1.05</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Bag of Chips</p>
+								  <img src="img/sides/chips.jpg" alt="Bag of Chips">
+								  <p class="descrip">Bag of Chips</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>1.42</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Side of Rice</p>
+								  <img src="img/sides/rice.jpg" alt="Side of Rice">
+								  <p class="descrip">Cup of rice</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>2.19</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Frijole</p>
+								  <img src="img/sides/frijole.jpg" alt="Frijole">
+								  <p class="descrip">Cup of beans topped with cheese</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>2.30</span></p>
+							  </div>
+							  
+						  </div>
+                      </div>
+
+                      <div class="collapsible radius_2" id="breakfast">Breakfast</div>
+                      <div class="content">
+						  <div class="menu">
+							  
+							  <div class="recipe"> 
+								  <p class="name">Breakfast Taco</p>
+								  <img src="img/breakfast/b_taco.jpg" alt="Breakfast Taco">
+								  <p class="descrip">Made standard on a small flour tortilla with 1 rounded scoop of sausage &#38; egg and cheese</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>2.52</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Breakfast Burrito</p>
+								  <img src="img/breakfast/b_burrito.jpg" alt="Breakfast Burrito">
+								  <p class="descrip">Made standard on a large flour tortilla with 2 rounded scoops of sausage &#38; egg and cheese</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>3.62</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Small Coffee</p>
+								  <img src="img/breakfast/sm-coffee.jpg" alt="Small Coffee">
+								  <p class="descrip">16oz cup</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>1.38</span></p>
+							  </div>
+							  
+							  <div class="recipe"> 
+								  <p class="name">Large Coffee</p>
+								  <img src="img/breakfast/sm-coffee.jpg" alt="Large Coffee">
+								  <p class="descrip">20oz cup</p>
+								  <a class="btnStyle3 btnStyle">Add to Cart</a>
+								  <p class="price">$<span>1.65</span></p>
+							  </div>
+						  
+						  </div>
+						
+						</div>
 					
-					<button class="collapsible">Nachos</button>
-                    <div class="content">
-                        <div class="menu">
-                            <div class="item">Taco 1</div>
-                            <div class="item">Taco 2</div>
-                            <div class="item">Taco 3</div>
-                            <div class="item">Taco 4</div>
-                            <div class="item">Taco 5</div>
-                            <div class="item">Taco 6</div>
-                        </div>
 					</div>
-					
-					<button class="collapsible">Chili</button>
-                    <div class="content">
-                        <div class="menu">
-                            <div class="item">Taco 1</div>
-                            <div class="item">Taco 2</div>
-                            <div class="item">Taco 3</div>
-                            <div class="item">Taco 4</div>
-                            <div class="item">Taco 5</div>
-                            <div class="item">Taco 6</div>
-                        </div>
-					</div>
-					
-					<button class="collapsible">Salads</button>
-                    <div class="content">
-                        <div class="menu">
-                            <div class="item">Taco 1</div>
-                            <div class="item">Taco 2</div>
-                            <div class="item">Taco 3</div>
-                            <div class="item">Taco 4</div>
-                            <div class="item">Taco 5</div>
-                            <div class="item">Taco 6</div>
-                        </div>
-					</div>
-					
-					<button class="collapsible">Sides</button>
-                    <div class="content">
-                        <div class="menu">
-                            <div class="item">Taco 1</div>
-                            <div class="item">Taco 2</div>
-                            <div class="item">Taco 3</div>
-                            <div class="item">Taco 4</div>
-                            <div class="item">Taco 5</div>
-                            <div class="item">Taco 6</div>
-                        </div>
-					</div>
-					
-					<button class="collapsible">Breakfast</button>
-                    <div class="content">
-                        <div class="menu">
-                            <div class="item">Taco 1</div>
-                            <div class="item">Taco 2</div>
-                            <div class="item">Taco 3</div>
-                            <div class="item">Taco 4</div>
-                            <div class="item">Taco 5</div>
-                            <div class="item">Taco 6</div>
-                        </div>
+
+                    <div class="cart">
+						<h3>List of orders: $<span>0</span></h3>
+						<ol id="listOfOrders">
+						</ol>
+						<a class="btnStyle finishOrder">Finish Order</a>
 					</div>
 				
 				</div>
-				
-				
-				<div>Cart Area</div>
-				
-				
+
 			</main>
 			
 			<footer>
@@ -177,10 +390,10 @@
 					
 					<section class="links">
 						<h2 class="hidden">Social Media Links</h2>
-                        <a href="https://www.facebook.com/profile.php?id=100088592160774"><img src="img/dark_facebook.png" alt="Facebook"></a> <!--adjust color to fit theme-->
-                        <a href="#links"><img src="img/twitter_x.png" alt="Twitter X"></a>
-                        <a href="#links"><img src="img/dark_insta.png" alt="Instagram"></a>
-                        <a href="#links"><img src="img/dark_google.png" alt="Google+"></a>
+                        <a href="https://www.facebook.com/profile.php?id=100088592160774"><img src="img/red_facebook.png" alt="Facebook"></a> <!--adjust color to fit theme-->
+                        <a href="#links"><img src="img/red_x.png" alt="Twitter X"></a>
+                        <a href="#links"><img src="img/red_insta.png" alt="Instagram"></a>
+                        <a href="#links"><img src="img/red_google.png" alt="Google+"></a>
 					</section>
 					
 					<section class="address_main">
@@ -189,7 +402,7 @@
 							1580 Clarsville St.<br>
 							Paris, TX 75460<br>
 							903-785-7173<br>
-							<a href="tacodeliteparis@gmai.com">tacodeliteparis@gmail.com</a><br>
+							<a href="tacodeliteparis@gmail.com">tacodeliteparis@gmail.com</a><br>
 						</address>
 						
 					</section>
