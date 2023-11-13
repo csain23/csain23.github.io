@@ -1,5 +1,5 @@
 @charset "utf-8";
-/*---JS David Sain - 10/06/2023---*/
+/*--- David Sain - 10/20/2023---*/
 /* CSS Document */
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -139,7 +139,6 @@ img {
 	
 }
 
-
 /*---ABOUT---*/
 .about_grid {  
     display: grid;
@@ -161,12 +160,9 @@ img {
 		justify-content: center;
 		flex-wrap: wrap;}
 .div4 p {
-/*	margin: 10px;*/
-	
-/*	border: 5px solid;*/
-  margin: auto;
-  width: 90%;
-  padding: 10px;
+	margin: auto;
+    width: 90%;
+    padding: 10px;
 }
 .div4 button {
 	margin: 10px 15px 25px 15px;
@@ -291,10 +287,6 @@ img {
     max-width: 100%;
     margin-top: 10px;
     flex-direction: column;
-/*
-	align-items: flex-start;
-	justify-content: center;
-*/
 }
 .div18 li {
 	margin: 5px;
@@ -369,14 +361,12 @@ form button {
 
 .button_start ,.button_end {
 	border: 0px;
-/*	height: 40px;*/
 }
 
 .button_start {
 	margin: 0px 0px 0px 0px;
 	padding: 3px 3px 3px 3px;
 	border-radius: 15px 0px 0px 15px;
-/*	transform: 0px;*/
 }
 
 .button_end {
@@ -384,7 +374,6 @@ form button {
 	padding: 0px 200px 0px 30px;
 	max-width: 40px;
 	font-size: 35px;
-/*	line-height: 3px;*/
 	border-radius: 0px 15px 15px 0px;
 }
 
@@ -451,7 +440,6 @@ footer{
 .footer_img {
 	position: absolute;
     bottom: 30px;
-/*    right: 30px;*/
 	transform: translate(-25%, 0%);
     width: 1200px;
 	z-index: -1;
@@ -562,15 +550,14 @@ footer{
 }
 
 .ism-caption {
-  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
-  padding: 0 1em;
-  text-shadow: none;
-  line-height: 1.2em;
-/*  padding: 0.25em 0.5em;*/
-  width: auto;
-  height: auto;
-  text-align: center;
-  visibility: hidden;
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+    padding: 0 1em;
+    text-shadow: none;
+    line-height: 1.2em;
+    width: auto;
+    height: auto;
+    text-align: center;
+    visibility: hidden;
 }
 
 a.ism-image-link .ism-caption, a.ism-caption {
@@ -875,71 +862,18 @@ p.ism-badge a.ism-link:hover {
     -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
 }
 
-/*
-#my-slider .ism-slide-0 .ism-caption-1.ism-caption-anim {
-    -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
-}
-
-#my-slider .ism-slide-0 .ism-caption-2.ism-caption-anim {
-    -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
-}
-*/
-
 #my-slider .ism-slide-1 .ism-caption-0.ism-caption-anim {
     -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
 }
-
-/*
-#my-slider .ism-slide-1 .ism-caption-1.ism-caption-anim {
-    -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
-}
-
-#my-slider .ism-slide-1 .ism-caption-2.ism-caption-anim {
-    -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
-}
-*/
-
 #my-slider .ism-slide-2 .ism-caption-0.ism-caption-anim {
     -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
 }
-
-/*
-#my-slider .ism-slide-2 .ism-caption-1.ism-caption-anim {
-    -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
-}
-
-#my-slider .ism-slide-2 .ism-caption-2.ism-caption-anim {
-    -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
-}
-*/
-
 #my-slider .ism-slide-3 .ism-caption-0.ism-caption-anim {
     -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
 }
-
-/*
-#my-slider .ism-slide-3 .ism-caption-1.ism-caption-anim {
-    -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
-}
-
-#my-slider .ism-slide-3 .ism-caption-2.ism-caption-anim {
-    -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
-}
-*/
-
 #my-slider .ism-slide-4 .ism-caption-0.ism-caption-anim {
     -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
 }
-
-/*
-#my-slider .ism-slide-4 .ism-caption-1.ism-caption-anim {
-    -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
-}
-
-#my-slider .ism-slide-4 .ism-caption-2.ism-caption-anim {
-    -webkit-animation: fadein 0.5s; animation: fadein 0.5s;
-}
-*/
 
 #my-slider .ism-slide-0 .ism-caption-0 {
     font-size: 1em;
@@ -951,28 +885,6 @@ p.ism-badge a.ism-link:hover {
     color: #fff; background-color: rgba(0, 0, 0, 0.70);
 }
 
-/*
-#my-slider .ism-slide-0 .ism-caption-1 {
-    font-size: 1em;
-    font-family: sans-serif;
-    position: absolute; top: 60%;
-    left: 40%;
-    border-radius: 4px;
-    border: none;
-    color: #fff; background-color: rgba(0, 0, 0, 0.70);
-}
-
-#my-slider .ism-slide-0 .ism-caption-2 {
-    font-size: 1em;
-    font-family: sans-serif;
-    position: absolute; top: 20%;
-    left: 60%;
-    border-radius: 4px;
-    border: none;
-    color: #fff; background-color: rgba(0, 0, 0, 0.70);
-}
-*/
-
 #my-slider .ism-slide-1 .ism-caption-0 {
     font-size: 1em;
     font-family: sans-serif;
@@ -983,27 +895,6 @@ p.ism-badge a.ism-link:hover {
     color: #fff; background-color: rgba(0, 0, 0, 0.70);
 }
 
-/*
-#my-slider .ism-slide-1 .ism-caption-1 {
-    font-size: 1em;
-    font-family: sans-serif;
-    position: absolute; top: 60%;
-    left: 40%;
-    border-radius: 4px;
-    border: none;
-    color: #fff; background-color: rgba(0, 0, 0, 0.70);
-}
-
-#my-slider .ism-slide-1 .ism-caption-2 {
-    font-size: 1em;
-    font-family: sans-serif;
-    position: absolute; top: 20%;
-    left: 60%;
-    border-radius: 4px;
-    border: none;
-    color: #fff; background-color: rgba(0, 0, 0, 0.70);
-}
-*/
 
 #my-slider .ism-slide-2 .ism-caption-0 {
     font-size: 1em;
@@ -1015,28 +906,6 @@ p.ism-badge a.ism-link:hover {
     color: #fff; background-color: rgba(0, 0, 0, 0.70);
 }
 
-/*
-#my-slider .ism-slide-2 .ism-caption-1 {
-    font-size: 1em;
-    font-family: sans-serif;
-    position: absolute; top: 60%;
-    left: 40%;
-    border-radius: 4px;
-    border: none;
-    color: #fff; background-color: rgba(0, 0, 0, 0.70);
-}
-
-#my-slider .ism-slide-2 .ism-caption-2 {
-    font-size: 1em;
-    font-family: sans-serif;
-    position: absolute; top: 20%;
-    left: 60%;
-    border-radius: 4px;
-    border: none;
-    color: #fff; background-color: rgba(0, 0, 0, 0.70);
-}
-*/
-
 #my-slider .ism-slide-3 .ism-caption-0 {
     font-size: 1em;
     font-family: sans-serif;
@@ -1047,28 +916,6 @@ p.ism-badge a.ism-link:hover {
     color: #fff; background-color: rgba(0, 0, 0, 0.70);
 }
 
-/*
-#my-slider .ism-slide-3 .ism-caption-1 {
-    font-size: 1em;
-    font-family: sans-serif;
-    position: absolute; top: 60%;
-    left: 40%;
-    border-radius: 4px;
-    border: none;
-    color: #fff; background-color: rgba(0, 0, 0, 0.70);
-}
-
-#my-slider .ism-slide-3 .ism-caption-2 {
-    font-size: 1em;
-    font-family: sans-serif;
-    position: absolute; top: 20%;
-    left: 60%;
-    border-radius: 4px;
-    border: none;
-    color: #fff; background-color: rgba(0, 0, 0, 0.70);
-}
-*/
-
 #my-slider .ism-slide-4 .ism-caption-0 {
     font-size: 1em;
     font-family: sans-serif;
@@ -1078,30 +925,6 @@ p.ism-badge a.ism-link:hover {
     border: none;
     color: #fff; background-color: rgba(0, 0, 0, 0.70);
 }
-
-/*
-#my-slider .ism-slide-4 .ism-caption-1 {
-    font-size: 1em;
-    font-family: sans-serif;
-    position: absolute; top: 60%;
-    left: 40%;
-    border-radius: 4px;
-    border: none;
-    color: #fff; background-color: rgba(0, 0, 0, 0.70);
-}
-
-#my-slider .ism-slide-4 .ism-caption-2 {
-    font-size: 1em;
-    font-family: sans-serif;
-    position: absolute; top: 20%;
-    left: 60%;
-    border-radius: 4px;
-    border: none;
-    color: #fff; background-color: rgba(0, 0, 0, 0.70);
-}
-*/
-
-
 
 /*slider end*/
 
