@@ -446,7 +446,36 @@ footer{
 	
 }
 
+/*---PROJECT---*/
+.project_grid {  
+    display: grid;
+    max-width: 1200px;
+    margin: auto;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: auto auto;
+    gap: 10px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "div20 div20 div20"
+      "div21 div22 div23";
+    align-items: center;
+    justify-items: center;
+}
 
+.div20 { grid-area: div20;
+        display: flex;
+		justify-content: center;
+		flex-wrap: wrap;}
+.div21 { grid-area: div21; }
+.div22 { grid-area: div22; }
+.div23 { grid-area: div23; }
+
+
+.div20 p {
+	margin: auto;
+    width: 90%;
+    padding: 10px;
+}
 
 
 
